@@ -15,13 +15,12 @@
           </tr>
           {% endif %}
           {% endfor %}
-          {% endfor %}
         </table>
 
         <div class="card">
             {% for section in site.html_pages %}{% if section.person %}
             <div class="card-body">
-			section.person
+			{{section.person}}
             </div>
 			{% endif %}{%- endfor -%}	
         </div>
