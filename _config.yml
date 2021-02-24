@@ -23,7 +23,7 @@ title-icon: fas fa-robot
 # description, keywords, and image for meta tags
 description: "Create a workshop website quick and easy!"
 keywords: "seminar, RPL, UCL, robotics, perception, learning"
-featured-image: "/images/uidaho-workshop.jpg"
+featured-image: "/images/index.jpg"
 # add search box to footer? true/false
 search: true
 

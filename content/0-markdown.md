@@ -8,7 +8,8 @@ How to edit the website:
 2. Delete the `content/<>.html` files that you don't want as tabs or add new ones. Alphabetical order determines navigation order.
 3. Edit them to your liking. Check example markdown code below this list for html templates. 
 4. Edit `index.md` to your landing page description
-5. Move this file (`content/0-markdown.md`) to a different folder for future reference.
+5. Change `favicon.ico` to your icon
+6. Move this file (`content/0-markdown.md`) to a different folder for future reference.
 
 #### Optional edits:
 
