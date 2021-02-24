@@ -6,6 +6,11 @@
 #
 #########
 
+
+# Go down the configuration yaml and edit the fields that you want to
+# be included in your website.
+
+
 #######
 # SITE SETTINGS
 #
@@ -23,13 +28,13 @@ featured-image: "/images/uidaho-workshop.jpg"
 search: true
 
 # author settings for cc-by, appears in the footer and credits
-author: evan will
+author: Dennis Hadjivelichkov
 # your github username for link [optional]
-github_username: evanwill
+github_username: dennisushi
 # year or date published
-pub_year: 2020
+pub_year: 2021
 # location of code, the full url to your github repository
-source-code: https://github.com/evanwill/workshop-template-b
+source-code: https://github.com/RPL-CS-UCL/workshop-template-b
 
 ##########
 # URL VARIABLES [optional!]
@@ -70,3 +75,6 @@ defaults:
       layout: "section"
 # Build settings
 markdown: kramdown
+
+
+########
