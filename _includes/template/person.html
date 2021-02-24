@@ -2,19 +2,19 @@
     <div class="m-3 col-md-8" >
     	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 
-            {% for section in site.html_pages %}{% if section.person %}
-
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-                <img src="images/people/{{section.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{section.person}}</h3>
-              <br>
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
+            {% for section in site.html_pages %}
+            {% if section.person %}
+	          <tr>
+	            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+	                <img src="{{ section.image | prepend: '/images/people/' | relative_url }" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+	            </td>
+	            <td style="padding:2.5%;width:75%;vertical-align:middle">
+	              <h3>{{section.person}}</h3>
+	              <br>
+	            </td>
+	          </tr>
+	        {% endif %}
+          	{% endfor %}
         </table>
 
         <div class="card">
