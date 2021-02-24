@@ -1,7 +1,9 @@
 ---
-title: Project
-nav: Project
+title: Videos
+nav: Videos
 ---
 
 
-Project description here!
+Example Video
+
+{% include video-embed.html youtubeid="moJgWrD6dwg" caption="Example video" %}

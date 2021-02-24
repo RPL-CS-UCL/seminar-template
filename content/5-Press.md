@@ -1,7 +1,7 @@
 ---
-title: Project
-nav: Project
+title: Press
+nav: Press
 ---
 
 
-Project description here!
+Press description here! Written in Markdown (`5-Press.md`)
