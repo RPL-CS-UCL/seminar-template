@@ -25,15 +25,15 @@ layout: default
 
 {% if page.type %}
 {% if page.type == 'videos' %}
-{% for video in site.html_pages %}
-	{% if video.type %}
-	{% if video.type=='video' %}
-		{% if video.youtubeid %}
-		{% include video-embed.html youtubeid="{{video.youtubeid}}" caption="{% if video.caption %}{{video.caption}}{% endif %}" %}
+	{% for video in site.html_pages %}
+		{% if video.type %}
+		{% if video.type=='video' %}
+			Has type
+			{% if video.youtubeid %}
+				% include video-embed.html youtubeid="{{video.youtubeid}}" caption="{% if video.caption %}{{video.caption}}{% endif %}" %
+			{% endif %}
 		{% endif %}
-	{% endif %}
-	{% endif %}
-{% endfor %}
-{% include template/videos.html %}
+		{% endif %}
+	{% endfor %}
 {% endif %}
 {% endif %}
