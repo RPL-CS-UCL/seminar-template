@@ -27,11 +27,10 @@ layout: default
 {% if page.type == 'videos' %}
 {% for video in site.html_pages %}
 	{% if video.type %}
-	Has type
 	{% if video.type=='video' %}
-	Is video
-	{{video.youtube.id}}
-	{% include video-embed.html youtubeid="{{video.youtubeid}}" caption="{{video.caption}}" %}
+		{% if video.youtubeid %}
+		{% include video-embed.html youtubeid="{{video.youtubeid}}" caption="{% if video.caption %}{{video.caption}}{% endif %}" %}
+		{% endif %}
 	{% endif %}
 	{% endif %}
 {% endfor %}
