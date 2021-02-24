@@ -3,6 +3,10 @@ title: Tutorial
 nav: Tutorial
 ---
 
+Preliminaries:
+1. Fork the website 
+2. Make github page from settings
+
 How to edit the website:
 1. Edit the _config.yml
 2. Delete the `content/<>.html` files that you don't want as tabs or add new ones. Alphabetical order determines navigation order.
