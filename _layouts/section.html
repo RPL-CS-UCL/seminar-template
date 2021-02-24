@@ -28,9 +28,9 @@ layout: default
 	{% for video in site.html_pages %}
 		{% if video.type %}
 		{% if video.type=='video' %}
-			Has type
 			{% if video.youtubeid %}
-				% include video-embed.html youtubeid="{{video.youtubeid}}" caption="{% if video.caption %}{{video.caption}}{% endif %}" %
+			% if video.caption %}{{video.caption}}{% endif %
+				{% include video-embed.html youtubeid="{{video.youtubeid}}" caption="" %}
 			{% endif %}
 		{% endif %}
 		{% endif %}
