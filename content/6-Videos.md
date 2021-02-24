@@ -5,6 +5,4 @@ type: videos
 ---
 
 
-Example Video
-
-{% include video-embed.html youtubeid="moJgWrD6dwg" caption="Example video" %}
+Example Video page `content/6-Video.md`

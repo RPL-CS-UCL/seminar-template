@@ -30,7 +30,7 @@ layout: default
 		{% if video.type=='video' %}
 			{% if video.youtubeid %}
 			<div class="text-center mb-4 border rounded p-2">
-			    <figure class="figure">
+			    <figure class="figure mb-0 w-{{ video.width | default: '100' }}">
 			        <div class="embed-responsive embed-responsive-16by9">
 			            <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/{{ video.youtubeid }}?rel=0&modestbranding=1" allowfullscreen></iframe>
 			        </div>
