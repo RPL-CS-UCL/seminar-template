@@ -30,15 +30,14 @@ layout: default
 		{% if video.type=='video' %}
 			{% if video.youtubeid %}
 			<div class="text-center mb-4 border rounded p-2">
-			    <figure class="mb-0">
+			    <figure class="figure">
 			        <div class="embed-responsive embed-responsive-16by9">
-			            <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/{{ page.youtubeid }}?rel=0&modestbranding=1" allowfullscreen></iframe>
+			            <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/{{ video.youtubeid }}?rel=0&modestbranding=1" allowfullscreen></iframe>
 			        </div>
+			        {% if video.caption %}
 			        <figcaption class="figure-caption mt-1">
-			        <a href="https://youtu.be/{{ video.youtubeid }}" target="_blank" rel="noopener">
-			        {% if video.caption %}{{video.caption}}{% endif %}
-			    	</a>
-			    	</figcaption>
+			        {{video.caption}}
+			    	</figcaption>{% endif %}
 			    </figure>
 			</div>
 			{% endif %}
@@ -47,3 +46,4 @@ layout: default
 	{% endfor %}
 {% endif %}
 {% endif %}
+
