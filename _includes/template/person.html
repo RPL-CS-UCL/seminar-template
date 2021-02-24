@@ -9,9 +9,15 @@
 	                <img src="{{ section.image | prepend: '/images/people/' | relative_url }}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
 	            </td>
 	            <td style="padding:2.5%;width:75%;vertical-align:middle">
-	              <h4>{{section.person}}</h4>
+	              	<h4>
+	              	{% if section.link %}<a href="{{section.link}}">{% endif %}	
+	              	{{section.person}}
+	              	{% if section.link %}</a>{% endif %}
+	          		</h4>
 	              <br>
-	              {{content}}
+	              {% if section.description %}
+	              {{section.description}}
+	              {% endif %}
 	            </td>
 	          </tr>
 	        {% endif %}
