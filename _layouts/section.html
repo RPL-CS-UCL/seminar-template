@@ -26,8 +26,10 @@ layout: default
 {% if page.type %}
 {% if page.type == 'videos' %}
 {% for video in site.html_pages %}
+	{% if video.type %}
 	{% if video.type=='video' %}
 		{% include video-embed.html youtubeid="{{video.youtubeid}}" caption="{{video.caption}}" %}
+	{% endif %}
 	{% endif %}
 {% endfor %}
 {% include template/videos.html %}
