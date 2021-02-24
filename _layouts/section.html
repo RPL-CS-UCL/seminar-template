@@ -31,7 +31,7 @@ layout: default
 	{% if video.type=='video' %}
 	Is video
 	{{video.youtube.id}}
-		{{% include video-embed.html youtubeid="{{video.youtubeid}}" caption="{{video.caption}}" %}}
+	{% include video-embed.html youtubeid="{{video.youtubeid}}" caption="{{video.caption}}" %}
 	{% endif %}
 	{% endif %}
 {% endfor %}

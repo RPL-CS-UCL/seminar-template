@@ -28,9 +28,9 @@ featured-image: "/images/index.jpg"
 search: true
 
 # author settings for cc-by, appears in the footer and credits
-author: Dennis Hadjivelichkov
+author: RPL Lab, UCL
 # your github username for link [optional]
-github_username: dennisushi
+github_username: rpl-cs-ucl
 # year or date published
 pub_year: 2021
 # location of code, the full url to your github repository
