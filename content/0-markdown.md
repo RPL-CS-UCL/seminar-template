@@ -1,6 +1,6 @@
 ---
-title: Website Tutorial
-nav: Website Tutorial
+title: Tutorial
+nav: Tutorial
 ---
 
 How to edit the website:
