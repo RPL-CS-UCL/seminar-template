@@ -1,7 +1,7 @@
 ---
-title: Project
-nav: Project
+title: Consortium
+nav: Consortium
 ---
 
 
-Project description here!
+Consortium description here!

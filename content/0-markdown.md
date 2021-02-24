@@ -1,5 +1,5 @@
 ---
-title: Markdown Tips
+title: Website Tutorial
 nav: Website Tutorial
 ---
 
@@ -8,8 +8,7 @@ How to edit the website:
 2. Delete the `content/<>.html` files that you don't want as tabs or add new ones. Alphabetical order determines navigation order.
 3. Edit them to your liking. Check example markdown code below this list for html templates. 
 4. Edit `index.md` to your landing page description
-5. Delete this file (`content/0-markdown.md`)!
-
+5. Move this file (`content/0-markdown.md`) to a different folder for future reference.
 
 #### Optional edits:
 
@@ -18,6 +17,7 @@ How to edit the website:
 - Give a tiny splash of color on the header and footer borders by tweaking the `$top-border` 
 - `$link-color` colors links
 
+---------
 
 ## Content Pages
 
@@ -97,7 +97,7 @@ All content must follow the [community guidelines](https://help.github.com/artic
 #### Figures 
 
 - put any images you want to use in the "images" folder.
-- in a markdown file where you want the image to appear, use the `figure.html` include on its own line, following the pattern: `{% include figure.html img="my-cat.jpg" alt="cat" caption="My cat" width="50%" %}`
+- in a markdown file where you want the image to appear, use the `figure.html` include on its own line, following the pattern: `{% raw %}{% include figure.html img="my-cat.jpg" alt="cat" caption="My cat" width="50%" %}{% endraw %}`
 
 {% include figure.html img="uidaho-workshop.jpg" alt="workshop scene" caption="Library workshops!" width="75%" %}
 

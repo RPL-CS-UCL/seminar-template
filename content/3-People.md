@@ -1,7 +1,22 @@
 ---
-title: Project
-nav: Project
+title: People
+nav: People
 ---
 
 
 Project description here!
+
+<div class="row justify-content-center">
+    <div class="m-3 col-md-8" >
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Contents:</h5>
+                <ul>
+                    {% for section in site.people %}
+                    <li><a href="{{ section.url | relative_url }}">AAAA</a></li>
+                    {% endif %}{%- endfor -%}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
