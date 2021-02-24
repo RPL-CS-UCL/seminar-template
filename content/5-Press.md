@@ -1,6 +1,7 @@
 ---
 title: Press
 nav: Press
+type: press
 ---
 
 

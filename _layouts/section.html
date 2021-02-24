@@ -17,8 +17,17 @@ layout: default
 </div>
 {%- endif -%}
 
+{{ content }}
+
 {% if page.people %}
 {% include template/person.html %}
 {%- endif -%}
 
-{{ content }}
+{% if page.type %}
+{% if page.type == 'videos' %}
+{% for video in site.html_pages %}
+	A
+{% endfor %}
+{% include template/videos.html %}
+{% endif %}
+{% endif %}

@@ -1,6 +1,7 @@
 ---
 title: Videos
 nav: Videos
+type: videos
 ---
 
 

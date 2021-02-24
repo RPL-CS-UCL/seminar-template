@@ -2,7 +2,7 @@
 title: People
 nav: People
 people: true
+type: people
 ---
 
-
-Project description here! Add people to the people folder as the example person.
+Add people to the people folder as the example person. Delete this line in `3-People.md` to remove it.
