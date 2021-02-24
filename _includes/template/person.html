@@ -5,12 +5,13 @@
             {% for section in site.html_pages %}
             {% if section.person %}
 	          <tr>
-	            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+	            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:150px">
 	                <img src="{{ section.image | prepend: '/images/people/' | relative_url }}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
 	            </td>
 	            <td style="padding:2.5%;width:75%;vertical-align:middle">
-	              <h3>{{section.person}}</h3>
+	              <h4>{{section.person}}</h4>
 	              <br>
+	              {{content}}
 	            </td>
 	          </tr>
 	        {% endif %}
